@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kzp_bg"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_setting"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="settingClick"/>
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="#FFFFFF"
+            android:text="OPEN"/>
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/openBtn"
+            android:background="@drawable/btn_bg"
+            android:textColor="#FFFFFF"
+            android:text="CLOSE"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
